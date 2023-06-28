@@ -144,7 +144,7 @@ export const fetchGameByIdFailure = (error) => {
   export const fetchAllGames = (page) => {
     return (dispatch) => {
       dispatch(fetchAllGamesRequest());
-      axios.get(`http://localhost:3001/videogames/${page}`)
+      axios.get(`/videogames/${page}`)
         .then((response) => {
           dispatch(fetchAllGamesSuccess(response.data));
         })
@@ -159,7 +159,7 @@ export const fetchGameByIdFailure = (error) => {
       dispatch(searchGamesRequest());
   
       axios
-        .get(`http://localhost:3001/videogames/name/search?name=${searchTerm}`)
+        .get(`/videogames/name/search?name=${searchTerm}`)
         .then((response) => {
           dispatch(searchGamesSuccess(response.data));
         })
@@ -173,7 +173,7 @@ export const fetchGameByIdFailure = (error) => {
     return (dispatch) => {
       dispatch(fetchGameByIdRequest());
   
-      axios.get(`http://localhost:3001/videogames/id/${id}`)
+      axios.get(`/videogames/id/${id}`)
         .then((response) => {
           dispatch(fetchGameByIdSuccess(response.data));
         })
@@ -189,7 +189,7 @@ export const fetchGameByIdFailure = (error) => {
       dispatch(fetchGenresRequest());
   
       axios
-        .get('http://localhost:3001/videogames/genero/genres')
+        .get('/videogames/genero/genres')
         .then((response) => {
           dispatch(fetchGenresSuccess(response.data));
         })
@@ -204,7 +204,7 @@ export const fetchGameByIdFailure = (error) => {
     console.log(formData);
     return async (dispatch) => {
       try {
-        const response = await axios.post('http://localhost:3001/videogames/', formData);
+        const response = await axios.post('/videogames/', formData);
         const newVideogame = response.data;
         console.log(newVideogame);
        

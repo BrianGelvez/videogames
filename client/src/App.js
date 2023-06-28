@@ -1,10 +1,13 @@
 import React from 'react';
+import axios from 'axios';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import { LandingPage } from './components/LandingPage/LandingPage';
 import HomePage from '../src/components/HomePage/HomePage'
 import Detail from './components/Detail/Detail';
 import { FormPage } from './components/FormPage/FormPage';
+axios.defaults.baseURL = "http://localhost:3001/"
+
 
 function App() {
   return (
