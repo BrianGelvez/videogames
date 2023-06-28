@@ -1,0 +1,7 @@
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:  rgb(97, 97, 97);
+    margin-bottom: 3%;
+  }

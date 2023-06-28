@@ -1,0 +1,67 @@
+.GameCard2 {
+  background-color: #000000;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 50px;
+}
+
+.GameCard {
+  background-color: #1e3d1d;
+  width: 290px; 
+  color: wheat;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 4px 0px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.GameCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.GameCard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.GameCard a:hover {
+  text-decoration: underline;
+}
+
+.GameCard a:visited {
+  color: inherit;
+}
+  
+  /* .GameCard-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .GameCard h3 {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .GameCard p {
+    font-size: 14px; 
+    color: #ffffff;
+  } */
+  
