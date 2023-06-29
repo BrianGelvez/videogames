@@ -6,7 +6,7 @@ import { LandingPage } from './components/LandingPage/LandingPage';
 import HomePage from '../src/components/HomePage/HomePage'
 import Detail from './components/Detail/Detail';
 import { FormPage } from './components/FormPage/FormPage';
-axios.defaults.baseURL = "videogames-production-82e9.up.railway.app/"
+axios.defaults.baseURL = "https://videogames-production-82e9.up.railway.app/"
 
 
 function App() {
